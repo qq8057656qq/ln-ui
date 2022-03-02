@@ -6,20 +6,38 @@
  */
 
 /* 屏幕宽度在340px至410px时的样式 */
-html{
+html {
     font-size: 20px;
 }
 
+body {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #f8f8f8;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
 /* 屏幕宽度小于340px时的样式 */
-@media (max-width: 340px){
-    html{
+@media (max-width: 340px) {
+    html {
         font-size: 18px;
     }
 }
 
 /* 屏幕宽度大于410px时的样式 */
-@media (min-width: 410px){
-    html{
+@media (min-width: 410px) {
+    html {
         font-size: 22px;
     }
+}
+
+.ln-mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 300;
 }

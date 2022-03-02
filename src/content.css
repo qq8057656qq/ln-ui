@@ -1,0 +1,19 @@
+/*
+ * @Author: lh
+ * @Date: 2022/3/2 5:12 PM
+ * @Last Modified by: lh
+ * @Last Modified time: 2022/3/2 5:12 PM
+ */
+.ln-content {
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+}
+
+/*根据header和navbar自动适应内容区高度*/
+.ln-header ~ .ln-content {
+    padding-top: 2.3rem;
+}
+.ln-navbar ~ .ln-content {
+    padding-bottom: 2.5rem;
+}

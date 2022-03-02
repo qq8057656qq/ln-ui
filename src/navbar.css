@@ -1,0 +1,16 @@
+/*
+ * @Author: lh
+ * @Date: 2022/3/2 5:12 PM
+ * @Last Modified by: lh
+ * @Last Modified time: 2022/3/2 5:12 PM
+ */
+.ln-navbar {
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    max-width: 640px;
+    height: 2.5rem;
+    border-top: 1px solid #ddd;
+    z-index: 200;
+}
