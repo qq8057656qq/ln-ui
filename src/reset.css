@@ -14,7 +14,7 @@ audio, video {
     padding: 0;
 }
 
-/* 统一全局字体 */
+/* 统一全局字体 从左至右依次查找*/
 body {
     font-family: -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif
 }
