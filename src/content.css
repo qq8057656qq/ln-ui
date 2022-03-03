@@ -40,6 +40,40 @@
 }
 
 /* 可手动设置内容区是否有内边距 */
-.tt-content .tt-panel-body.no-padding{
+.ln-content .ln-panel-body.no-padding{
     padding: 0;
+}
+
+/* 表单的单行容器 */
+.ln-form-item{
+    display: flex;
+    position: relative;
+    padding-left: 1rem;
+    border-bottom: 1px solid #eee;
+}
+/* 去掉最后一行的下边框 */
+.ln-form-item:last-child{
+    border-bottom: none;
+}
+
+/* 表单标签 */
+.ln-form-item > .ln-form-label{
+    display: block;
+    width: 3.5rem;
+    font-size: .8rem;
+    color: #666;
+    height: 2rem;
+    line-height: 2rem;
+}
+/* 表单内容区 */
+.ln-form-item > .ln-form-body{
+    flex: 1;
+}
+/* 输入框 */
+.ln-form-item > .ln-form-body > .ln-input{
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    border:none;
 }
