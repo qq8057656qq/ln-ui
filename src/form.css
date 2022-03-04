@@ -1,0 +1,32 @@
+/*
+ * @Author: lh
+ * @Date: 2022/3/4 2:04 PM
+ * @Last Modified by: lh
+ * @Last Modified time: 2022/3/4 2:04 PM
+ */
+
+/* 表单的单行容器 */
+.ln-form-item{
+    display: flex;
+    position: relative;
+    padding-left: 1rem;
+    border-bottom: 1px solid #eee;
+}
+/* 去掉最后一行的下边框 */
+.ln-form-item:last-child{
+    border-bottom: none;
+}
+
+/* 表单标签 */
+.ln-form-item > .ln-form-label{
+    display: block;
+    width: 3.5rem;
+    font-size: .8rem;
+    color: #666;
+    height: 2rem;
+    line-height: 2rem;
+}
+/* 表单内容区 */
+.ln-form-item > .ln-form-body{
+    flex: 1;
+}

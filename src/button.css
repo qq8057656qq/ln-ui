@@ -1,0 +1,55 @@
+/*
+ * @Author: lh
+ * @Date: 2022/3/4 2:02 PM
+ * @Last Modified by: lh
+ * @Last Modified time: 2022/3/4 2:02 PM
+ */
+.ln-btn {
+    display: block;
+    position: relative;
+    width: 10rem;
+    margin: 0 auto;
+    padding: .5rem 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: .7rem;
+    text-align: center;
+    color: #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    user-select: none;
+}
+/*主操作按钮样式*/
+.ln-btn.ln-btn-primary {
+    background-color: #1AAD19;
+    color: #fff;
+}
+
+/*警示按钮样式*/
+.ln-btn.ln-btn-warning {
+    background-color: #E64340;
+    color: #fff;
+}
+/*不可用按钮样式*/
+.ln-btn.ln-btn-disabled {
+    background-color: #F7F7F7;
+    color: #999;
+    opacity: .6;
+}
+
+.ln-btn.ln-btn-large {
+    width: 100%;
+    font-size: .9rem;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+.ln-btn.ln-btn-small {
+    display: inline-block;
+    width: 3rem;
+    font-size: .7rem;
+    padding: .2rem 0;
+}

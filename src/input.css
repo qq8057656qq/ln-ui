@@ -1,0 +1,96 @@
+/*
+ * @Author: lh
+ * @Date: 2022/3/4 2:03 PM
+ * @Last Modified by: lh
+ * @Last Modified time: 2022/3/4 2:03 PM
+ */
+/* 输入框 */
+.ln-form-item > .ln-form-body > .ln-input{
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    border:none;
+}
+
+/** 输入框清空按钮 */
+.ln-form-item > .ln-form-body > .ln-input-reset {
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    top: 50%;
+    margin-top: -.4rem;
+    right: 1rem;
+    font-size: .6rem;
+    background: #aaa;
+    color: #fff;
+    border-radius: 50%;
+}
+/* 输入框错误提示 */
+.ln-form-item > .ln-form-body > .ln-input-warning {
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    top: 50%;
+    margin-top: -.4rem;
+    right: 1rem;
+    font-size: .6rem;
+    color: red;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+
+/*单选*/
+.ln-form-item > .ln-radio {
+    flex: 1;
+    font-size: .8rem;
+    line-height: 2rem;
+}
+
+.ln-form-item > .ln-radio > .ln-radio-icon {
+    margin-right: .5rem;
+    color: #09BB07;
+    visibility: hidden;
+}
+
+.ln-form-item > .ln-radio.checked > .ln-radio-icon {
+    visibility: visible;
+}
+
+.ln-form-item > .ln-radio > .ln-radio-input {
+    position: absolute;
+    left: -999rem;
+}
+
+
+.ln-form-item > .ln-check {
+    flex: 1;
+    font-size: .8rem;
+    line-height: 2rem;
+}
+
+.ln-form-item > .ln-check > .ln-check-icon {
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    margin-right: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    color: rgba(0,0,0,0);
+    font-size: .6rem;
+}
+/*选中时图标*/
+.ln-form-item > .ln-check.checked > .ln-check-icon {
+    background: #09BB07;
+    color: #fff;
+    border-color: rgba(0,0,0,0);
+}
+
+.ln-form-item > .ln-check > .ln-check-input{
+    position: absolute;
+    left: -999rem;
+}
+
