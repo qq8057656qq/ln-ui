@@ -8,7 +8,8 @@
 </head>
 <body>
 <div class="ln-content">
-    <h1 class="ln-panel-title">Basic Input</h1>
+
+    <h1 class="ln-panel-title">基本输入框</h1>
     <div class="ln-panel-body no-padding">
         <div class="ln-form-item">
             <label class="ln-form-label">姓名:</label>
@@ -28,8 +29,81 @@
                 <input type="date" class="ln-input" placeholder="请选择生日"/>
             </div>
         </div>
-
     </div>
+
+    <h1 class="ln-panel-title">带清空功能的输入框</h1>
+    <div class="ln-panel-body no-padding">
+        <div class="ln-form-item">
+            <label class="ln-form-label">手机号</label>
+            <div class="ln-form-body">
+                <input type="tel" class="ln-input" placeholder="请输入手机号"/>
+                <i class="fa fa-close ln-input-reset"></i>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="ln-panel-title">带错误提示的输入框</h1>
+    <div class="ln-panel-body no-padding">
+        <div class="ln-form-item">
+            <label class="ln-form-label">邮箱</label>
+            <div class="ln-form-body">
+                <input type="email" class="ln-input" placeholder="请输入邮箱"/>
+                <i class="fa fa-exclamation ln-input-warning"></i>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="ln-panel-title">单选</h1>
+    <div class="ln-panel-body no-padding">
+        <div class="ln-form-item">
+            <div class="ln-radio checked" >
+                <i class="fa fa-check ln-radio-icon"></i>
+                <span class="ln-radio-desc">单选一</span>
+                <input class="ln-radio-input" type="radio" >
+            </div>
+        </div>
+        <div class="ln-form-item">
+            <div class="ln-radio">
+                <i class="fa fa-check ln-radio-icon"></i>
+                <span class="ln-radio-desc">单选二</span>
+                <input class="ln-radio-input" type="radio" >
+            </div>
+        </div>
+        <div class="ln-form-item">
+            <div class="ln-radio checked" >
+                <i class="fa fa-check ln-radio-icon"></i>
+                <span class="ln-radio-desc">单选三</span>
+                <input class="ln-radio-input" type="radio" >
+            </div>
+        </div>
+    </div>
+
+    <h1 class="ln-panel-title">多选</h1>
+    <div class="ln-panel-body no-padding">
+        <div class="ln-form-item">
+            <div class="ln-check">
+                <i class="fa fa-check ln-check-icon"></i>
+                <span class="ln-check-desc">多选一</span>
+                <input class="ln-check-input" type="checkbox">
+            </div>
+        </div>
+        <div class="ln-form-item">
+            <div class="ln-check checked">
+                <i class="fa fa-check ln-check-icon"></i>
+                <span class="ln-check-desc">多选二</span>
+                <input class="ln-check-input" type="checkbox">
+            </div>
+        </div>
+        <div class="ln-form-item">
+            <div class="ln-check checked">
+                <i class="fa fa-check ln-check-icon"></i>
+                <span class="ln-check-desc">多选三</span>
+                <input class="ln-check-input" type="checkbox">
+            </div>
+        </div>
+    </div>
+
+
 </div>
 </body>
 </html>
