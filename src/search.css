@@ -1,0 +1,113 @@
+/*
+ * @Author: lh
+ * @Date: 2022/3/5 3:22 PM
+ * @Last Modified by: lh
+ * @Last Modified time: 2022/3/5 3:22 PM
+ */
+.ln-search {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #f8f8f8;
+}
+
+.ln-search.on-focus {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.ln-header ~ .ln-content .ln-search.on-focus {
+    top: 2.3rem;
+}
+
+.ln-navbar ~ .ln-content .ln-search.on-focus {
+    bottom: 2.5rem;
+}
+
+.ln-search > .ln-search-form {
+    display: flex;
+    height: 2.3rem;
+    align-items: center;
+}
+
+.ln-search > .ln-search-form > .ln-search-input-wrap {
+    flex: 1;
+    position: relative;
+    padding: 0 .5rem;
+}
+
+.ln-search > .ln-search-form > .ln-search-cancel {
+    flex: 0 0 2.2rem;
+    padding-right: .5rem;
+    text-align: center;
+    font-size: .7rem;
+    display: none;
+}
+
+.ln-search.on-focus > .ln-search-form > .ln-search-cancel {
+    display: block;
+}
+
+.ln-search .ln-search-icon {
+    position: absolute;
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .7rem;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #ccc;
+}
+
+.ln-search .ln-search-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.6rem;
+    border: none;
+    font-size: .8rem;
+    padding-left: 1.5rem;
+    background: #fff;
+    border-radius: .2rem;
+}
+
+.ln-search .ln-search-clear {
+    position: absolute;
+    height: .8rem;
+    line-height: .8rem;
+    width: .8rem;
+    font-size: .6rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 1rem;
+    border-radius: 50%;
+    color: #fff;
+    background: #ccc;
+    display: none;
+}
+
+.ln-search.on-focus .ln-search-input:valid + .ln-search-clear {
+    display: block;
+}
+
+.ln-search > .ln-search-suggest {
+    display: none;
+}
+
+.ln-search.on-focus > .ln-search-suggest {
+    display: block;
+}
+
+.ln-search > .ln-search-suggest > .ln-suggest-item{
+    padding-left: 1rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
