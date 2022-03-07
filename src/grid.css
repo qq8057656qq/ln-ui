@@ -1,0 +1,81 @@
+/*
+ * @Author: lh
+ * @Date: 2022/3/7 10:46 AM
+ * @Last Modified by: lh
+ * @Last Modified time: 2022/3/7 10:46 AM
+ */
+.ln-grid {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd;
+}
+
+.ln-grid > .ln-grid-item {
+    position: relative;
+    flex: 1 1 33%;
+    box-sizing: border-box;
+    padding: 1.2rem 0;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid#ddd;
+    background: #fff;
+}
+
+.ln-grid .ln-grid-item:nth-child(3n){
+    border-right: none;
+}
+
+.ln-grid > .ln-grid-item > .ln-grid-icon {
+    font-size: 1.5rem;
+    color: #aaa;
+    margin-bottom: .5rem;
+}
+
+.ln-grid > .ln-grid-item > .ln-grid-label {
+    font-size: .6rem;
+    color: #333;
+}
+
+.ln-grid.no-border {
+    border: none;
+}
+
+.ln-grid.no-border > .ln-grid-item {
+    border: none !important;
+}
+
+/*两列网格*/
+
+.ln-grid.ln-grid-2 .ln-grid-item {
+    border-right: 1px solid #ddd;
+    flex-basis: 50%;
+    padding: 1.8rem 0;
+}
+
+.ln-grid.ln-grid-2 .ln-grid-item:nth-child(2n) {
+    border-right: none;
+}
+
+/*四列网格*/
+
+.ln-grid.ln-grid-4 .ln-grid-item {
+    border-right: 1px solid #ddd;
+    flex-basis: 25%;
+    padding: .9rem 0;
+}
+
+.ln-grid.ln-grid-4 .ln-grid-item:nth-child(4n) {
+    border-right: none;
+}
+
+/*五列网格*/
+
+.ln-grid.ln-grid-5 .ln-grid-item {
+    border-right: 1px solid #ddd;
+    flex-basis: 20%;
+    padding: .6rem 0;
+}
+
+.ln-grid.ln-grid-5 .ln-grid-item:nth-child(5n) {
+    border-right: none;
+}
