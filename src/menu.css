@@ -1,0 +1,78 @@
+/*
+ * @Author: lh
+ * @Date: 2022/3/7 3:36 PM
+ * @Last Modified by: lh
+ * @Last Modified time: 2022/3/7 3:36 PM
+ */
+
+.ln-menu > .ln-menu-item{
+    display: flex;
+    height: 2.3rem;
+    padding: 0 1rem;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    font-size: .8rem;
+}
+/*菜单名称*/
+.ln-menu > .ln-menu-item > .ln-menu-name {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333;
+}
+/*菜单信息*/
+.ln-menu > .ln-menu-item > .ln-menu-vale {
+    max-width: 5rem;
+    height: 1rem;
+    line-height: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #999;
+}
+
+/*下级操作引导图标*/
+.ln-menu > .ln-menu-item > .ln-menu-icon{
+    margin-left: .3rem;
+    color: #999;
+}
+
+/*切换开关*/
+.ln-menu > .ln-menu-item > .ln-switch {
+    position: relative;
+    box-sizing: content-box;
+    width: 2.6rem;
+    height: 1.4rem;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: .75rem;
+    background-color: rgba(0,0,0,0.1);
+    transition: background-color .3s, border .3s;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/*选中状态*/
+.ln-menu > .ln-menu-item > .ln-switch:checked {
+    border-color: #07c160;
+    background-color: #07C160;
+}
+/* 使用::after伪元素实现圆形按钮的样式 */
+.ln-menu > .ln-menu-item > .ln-switch::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: .7rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 2px #999;
+    transition: left .3s;
+}
+/* 选中状态下，更改圆形按钮的位置*/
+.ln-menu > .ln-menu-item > .ln-switch:checked::after{
+    left: 1.2rem;
+}
+
+
