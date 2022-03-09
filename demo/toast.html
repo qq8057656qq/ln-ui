@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="../src/ln-ui.css">
+    <title>Toast demo</title>
+</head>
+<body>
+<div class="ln-content">
+
+    <h2 class="ln-panel-title">Toast 提示组件</h2>
+    <div class="ln-panel-body">
+        <br/>
+        <a class="ln-btn" id="loadingTipShow">加载中提示</a>
+        <br/>
+        <a class="ln-btn" id="loadingSuccessShow">成功提示</a>
+        <br/>
+    </div>
+</div>
+<div class="ln-toast" id="js-toast-loading">
+    <i class="fa fa-spinner fa-spin ln-toast-icon"></i>
+    <p class="ln-toast-info">操作进行中</p>
+</div>
+<div class="ln-toast" id="js-toast-success">
+    <i class="fa fa-check ln-toast-icon"></i>
+    <p class="ln-toast-info">操作成功</p>
+</div>
+</body>
+<script>
+    window.onload = ()=>{
+        // 显示加载中的Toast
+        document.querySelector('#loadingTipShow').onclick = (e) => {
+            let toastEle = document.querySelector('#js-toast-loading');
+            toastEle.classList.add('show');
+            setTimeout(()=> {
+                toastEle.classList.remove('show');
+            }, 2e3);
+        };
+        // 显示操作成功的Toast
+        document.querySelector('#loadingSuccessShow').onclick = (e) => {
+            let toastEle = document.querySelector('#js-toast-success');
+            toastEle.classList.add('show');
+            setTimeout(()=> {
+                toastEle.classList.remove('show');
+            }, 2e3);
+        };
+    };
+</script>
+</html>
