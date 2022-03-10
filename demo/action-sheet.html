@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="../src/ln-ui.css">
+    <title>ActionSheet demo</title>
+</head>
+<body>
+<div class="ln-content">
+
+    <h2 class="ln-panel-title">ActionSheet 弹出式菜单</h2>
+    <div class="ln-panel-body">
+        <br/>
+        <a class="ln-btn" id="actionSheetShow">显示弹出式菜单</a>
+    </div>
+
+    <div class="ln-action-sheet">
+        <div class="ln-mask"></div>
+        <div class="ln-action-sheet-wrap">
+            <div class="ln-action-sheet-header">
+                <h1 class="ln-action-sheet-title">操作标题</h1>
+            </div>
+            <div class="ln-action-sheet-body">
+                <a class="ln-action-sheet-menu">收藏</a>
+                <a class="ln-action-sheet-menu">关注</a>
+                <a class="ln-action-sheet-menu">分享好友</a>
+            </div>
+            <div class="ln-action-sheet-footer">
+                <a class="ln-action-sheet-menu" id="actionSheetClose">取消</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script>
+    window.onload = ()=>{
+        // 弹出菜单
+        document.querySelector('#actionSheetShow').onclick = (e) => {
+            document.querySelector('.ln-action-sheet').classList.add('show');
+        }
+        // 收回菜单
+        document.querySelector('#actionSheetClose').onclick = (e) => {
+            document.querySelector('.ln-action-sheet').classList.remove('show');
+        }
+    };
+</script>
+</html>

@@ -1,0 +1,79 @@
+/*
+ * @Author: lh
+ * @Date: 2022/3/10 11:11 AM
+ * @Last Modified by: lh
+ * @Last Modified time: 2022/3/10 11:11 AM
+ */
+.ln-action-sheet > .ln-action-sheet-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 640px;
+    margin: auto;
+    background: #eee;
+    transition: transform .3s ease;
+    transform: translateY(100%);
+    z-index: 301;
+}
+
+/*菜单弹出时改变容器位移*/
+.ln-action-sheet.show .ln-action-sheet-wrap {
+    transform: translateY(0);
+}
+
+.ln-action-sheet > .ln-mask {
+    opacity: 0;
+    /*屏蔽点击事件*/
+    pointer-events: none;
+    transition: opacity .3s ease;
+}
+
+.ln-action-sheet.show > .ln-mask {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ln-action-sheet .ln-action-sheet-header{
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 3rem;
+    background: #fff;
+}
+
+.ln-action-sheet .ln-action-sheet-header > .ln-action-sheet-title {
+    flex: 1;
+    font-size: .7rem;
+    line-height: 1rem;
+    font-weight: normal;
+    color: rgba(0,0,0,.3);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.ln-action-sheet .ln-action-sheet-body {
+    border-top: 1px solid rgba(0,0,0,.1);
+    background: #fff;
+}
+
+.ln-action-sheet .ln-action-sheet-footer {
+    margin-top: .3rem;
+    background: #fff;
+}
+
+.ln-action-sheet .ln-action-sheet-menu {
+    display: block;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.ln-action-sheet .ln-action-sheet-menu + .ln-action-sheet-menu {
+    display: block;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
